@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Estagiário - Central de Estágios</title>
+    <link rel="stylesheet" href="../css/perfil.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="simulacao.html">Simular Entrevista</a></li>
+                <li><a href="#phone-number">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-container">
+            <h1>Perfil de Estagiário</h1>
+            <div class="profile-info">
+                <img id="profile-pic" src="default-picture.jpg" alt="Foto do Estagiário">
+                <h2 id="student-name">Nome do Estagiário</h2>
+                <p>Curso: <span id="course-name">Nome do Curso</span></p>
+                <p>Instituição: <span id="institution-name">Nome da Instituição</span></p>
+                <p>Email: <span id="email">email@example.com</span></p>
+                <p>Telefone: <span id="phone-number">(xx) xxxx-xxxx</span></p>
+            </div>
+            <div class="profile-skills">
+                <h3>Habilidades</h3>
+                <ul id="skills-list"></ul>
+            </div>
+            <div class="profile-experience">
+                <h3>Experiência</h3>
+                <ul id="experience-list"></ul>
+            </div>
+            <button id="edit-profile">Editar Perfil</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Central de Estágios</p>
+    </footer>
+
+    <script src="../scripts/perfil.js"></script>
+</body>
+</html>

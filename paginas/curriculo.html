@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Currículo</title>
+    <link rel="stylesheet" href="../css/curriculo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Currículo</h1>
+    </header>
+
+    <main>
+        <form id="curriculoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="experiencia">Experiência:</label>
+            <textarea id="experiencia" name="experiencia" required></textarea><br>
+
+            <label for="educacao">Educação:</label>
+            <textarea id="educacao" name="educacao" required></textarea><br>
+
+            <label for="habilidades">Habilidades:</label>
+            <textarea id="habilidades" name="habilidades" required></textarea><br>
+
+            <!-- Botão para upload de arquivo customizado -->
+            <div class="custum-file-upload">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M16.59 8.58L12 13.17l-4.59-4.59L6 10l6 6 6-6z"/>
+                    </svg>
+                </div>
+                <div class="text">
+                    <span>Arraste ou selecione seu currículo</span>
+                </div>
+                <input type="file" id="curriculo-upload" name="curriculo-upload" required>
+            </div>
+
+            <button type="submit" id="btn-curriculo">Cadastrar Currículo</button>
+        </form>
+    </main>
+
+    <script src="../scripts/curriculo.js"></script>
+</body>
+
+</html>

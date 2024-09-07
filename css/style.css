@@ -1,0 +1,172 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, #0e3b67, white, #1a1a1a);
+}
+
+header {
+    background: linear-gradient(90deg, rgba(10, 32, 61, 1) 0%, rgba(4, 55, 92, 1) 50%, rgba(0, 70, 140, 1) 100%);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin: 10px 0;
+    font-weight: 700;
+    color: #fff;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #7bff00;
+}
+
+.btn-cadastros {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.btn-cadastros a{
+    text-decoration: none;
+}
+
+#cadastro {
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradiente */
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#cadastro:disabled {
+    pointer-events: none;
+}
+
+#cadastro:hover {
+    color: #fff;
+    background-image: linear-gradient(to right, #feb47b, #ff7e5f); /* Gradiente invertido */
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+#cadastro:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+main {
+    padding: 20px;
+}
+
+#jobs h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+#job-list .job {
+    background-image: linear-gradient(to right, rgb(38, 122, 248) 20%, rgb(9, 90, 182) 40%, rgb(0, 47, 255));
+    color: #7fe60a;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#partners {
+    margin-top: 40px;
+    text-align: center;
+    color:#082f49;
+}
+
+#partners h2 {
+    margin-bottom: 20px;
+}
+
+#partners-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.partner {
+    flex: 1 1 150px;
+    max-width: 200px;
+    text-align: center;
+}
+
+.partner img {
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.partner p {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#tips {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#tips h2 {
+    margin-bottom: 20px;
+}
+
+#tips-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#Dicas {
+    color: #083344;
+}
+
+.tip {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.tip h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #1E1926;
+}
+
+.tip p {
+    font-size: 1em;
+    color: #2F0EBF;
+}

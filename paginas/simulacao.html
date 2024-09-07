@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Entrevista</title>
+    <link rel="stylesheet" href="../css/simulacao.css">
+</head>
+<body>
+    <header>
+        <h1>Simulação de Entrevista</h1>
+    </header>
+    <main>
+        <div id="interview-container">
+            <div id="question-section">
+                <h2 id="question-text">Clique em "Iniciar" para começar a simulação.</h2>
+                <input type="text" id="answer-input" placeholder="Digite sua resposta aqui..." style="display:none;">
+            </div>
+            <button id="start-button" onclick="startInterview()">Iniciar</button>
+            <button id="next-button" onclick="nextQuestion()" style="display:none;">Próxima</button>
+        </div>
+    </main>
+    <script src="../scripts/simulacao.js"></script>
+</body>
+</html>
