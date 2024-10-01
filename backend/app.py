@@ -18,6 +18,7 @@ CORS(app, resources={r"/api/*": {"origins": "*"}}) # Permitir requisições de q
 db = SQLAlchemy(app)
 
 
+
 # Modelo de Usuário
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
