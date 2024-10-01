@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     // Fetch user data from the backend
     async function fetchProfile() {
         try {
-            const response = await fetch('http://0.0.0.0:8080/api/profile'); // Rota para puxar o perfil do backend
+            const response = await fetch('central-estagios.railway.internal/api/profile'); // Rota para puxar o perfil do backend
             const data = await response.json();
 
             // Preencher os campos existentes

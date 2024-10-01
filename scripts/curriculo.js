@@ -9,7 +9,7 @@ document.getElementById('curriculo-form').addEventListener('submit', function (e
         habilidades: formData.get('habilidades')
     };
 
-    fetch('http://0.0.0.0:8080/api/curriculo', {
+    fetch('central-estagios.railway.internal/api/curriculo', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
