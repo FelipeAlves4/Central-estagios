@@ -5,7 +5,7 @@ document.getElementById('registerForm').addEventListener('submit', function (eve
     const email = document.querySelector('input[name="email"]').value;
     const senha = document.querySelector('input[name="senha"]').value;
 
-    fetch('http://127.0.0.1:5000/api/register', {
+    fetch('http://0.0.0.0:8080/api/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

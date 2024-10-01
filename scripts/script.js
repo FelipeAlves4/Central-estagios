@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function fetchJobs() {
-    fetch('http://127.0.0.1:5000/api/jobs')  // Altere a URL se o backend estiver rodando em um servidor diferente
+    fetch('http://0.0.0.0:8080/api/jobs')  // Altere a URL se o backend estiver rodando em um servidor diferente
         .then(response => {
             if (!response.ok) {
                 throw new Error('Erro ao buscar vagas');

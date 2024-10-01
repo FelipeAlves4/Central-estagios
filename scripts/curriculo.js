@@ -9,7 +9,7 @@ document.getElementById('curriculo-form').addEventListener('submit', function (e
         habilidades: formData.get('habilidades')
     };
 
-    fetch('http://127.0.0.1:5000/api/curriculo', {
+    fetch('http://0.0.0.0:8080/api/curriculo', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
