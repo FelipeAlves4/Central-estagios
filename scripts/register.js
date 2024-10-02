@@ -5,7 +5,7 @@ document.getElementById('registerForm').addEventListener('submit', function (eve
     const email = document.querySelector('input[name="email"]').value;
     const senha = document.querySelector('input[name="senha"]').value;
 
-    fetch('central-estagios.railway.internal/api/register', {
+    fetch('https://felipealves4.github.io/Central-estagios/api/register', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

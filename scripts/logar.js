@@ -4,7 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     const usuario = document.getElementById('usuario').value;
     const senha = document.getElementById('senha').value;
 
-    fetch('central-estagios.railway.internal/api/login', {
+    fetch('https://felipealves4.github.io/Central-estagios/api/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

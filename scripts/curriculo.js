@@ -9,7 +9,7 @@ document.getElementById('curriculo-form').addEventListener('submit', function (e
         habilidades: formData.get('habilidades')
     };
 
-    fetch('central-estagios.railway.internal/api/curriculo', {
+    fetch('https://felipealves4.github.io/Central-estagios/api/curriculo', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function fetchJobs() {
-    fetch('central-estagios.railway.internal/api/jobs')  // Altere a URL se o backend estiver rodando em um servidor diferente
+    fetch('https://felipealves4.github.io/Central-estagios/api/jobs')  // Altere a URL se o backend estiver rodando em um servidor diferente
         .then(response => {
             if (!response.ok) {
                 throw new Error('Erro ao buscar vagas');
