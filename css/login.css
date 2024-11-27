@@ -52,6 +52,7 @@ body * {
     background: #2f2841;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
+    transition: all 0.3s ease; /* Adicionado para suavizar mudanças */
 }
 
 .card-login>h1 {
@@ -80,6 +81,7 @@ body * {
     box-shadow: 0px 10px 40px #00000056;
     outline: none;
     box-sizing: border-box;
+    transition: all 0.3s ease; /* Suavizar a transição */
 }
 
 .textField>label {
@@ -91,24 +93,13 @@ body * {
     color: #f0ffff94;
 }
 
+/* Estilo para foco nos inputs */
+.textField>input:focus {
+    border: 2px solid #36c0fc;
+    background: #403a55;
+}
 
-/* 
-.btn-login{
-    width: 100%;
-    padding: 16px 0px;
-    margin: 25px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
-    color: #2b134b;
-    background: #00ff88;
-    cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
-} */
-
+/* Botões */
 .btn-login {
     width: 100%;
     padding: 10px 20px;
@@ -119,9 +110,8 @@ body * {
     letter-spacing: 4px;
     font-weight: 800;
     text-transform: uppercase;
-    transition: 0.5s;
+    transition: all 0.5s ease;
     cursor: pointer;
-    transition-property: box-shadow;
 }
 
 .btn-login {
@@ -136,20 +126,7 @@ body * {
         0 0 100px rgb(0, 140, 255);
 }
 
-.register {
-    margin-top: 30px;
-    justify-content: center;
-}
-
-.register p {
-    color: #f0ffffde;
-    margin: 0;
-    align-items: center;
-    font-size: 12pt;
-    margin-bottom: 10px;
-}
-
-
+/* Botão de registro */
 .btn-register {
     cursor: pointer;
     position: relative;
@@ -192,10 +169,7 @@ body * {
     scale: 1;
 }
 
-
-
-
-
+/* Responsividade */
 @media only screen and (max-width: 950px) {
     .card-login {
         width: 85%;
@@ -205,6 +179,7 @@ body * {
 @media only screen and (max-width: 600px) {
     .main-login {
         flex-direction: column;
+        align-items: center; /* Centralizar no mobile */
     }
 
     .left-login>h1 {
@@ -229,4 +204,15 @@ body * {
         width: 90%;
     }
 
+    .textField {
+        margin: 5px 0; /* Reduzindo margem no mobile */
+    }
+
+    .btn-login, .btn-register {
+        font-size: 16px; /* Ajustando tamanho do texto */
+    }
+
+    .register {
+        text-align: center; /* Centralizar no mobile */
+    }
 }
